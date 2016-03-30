@@ -80,7 +80,8 @@ Phrased questions to TIY cohort:
 - (1) Yes (2) Professional connections. - Nagmeh S.
 - (1) Yes (2) To appear professional - Vivek P.
 - (1) Yes (2) Networking - Ryan Y.
-- (1) No (2) used it to apply for a job very long time ago.
+- (1) No (2) used it to apply for a job very long time ago. Haythem H.
+- (1) Yes (2) I keep it so potential employers have some evidence that I’m a human, that people have worked with me, and that some of them liked working with me. But mostly for the human part. - Dana L.
 
 **Summary**
 It seems that most of the people polled used LinkedIn at some point for networking, even if the use of it in networking was merely to appear professional. The value to recruiters is obvious, but a nebulous "networking" isn't necessarily getting users anywhere (like most things that have that label). Saying that you use it for networking is much different than describing how you use it for networking. The most solid answer for use other than puffing up image seems to be for frontloading on meetings that you already have scheduled that you didn't use LinkedIn to create.

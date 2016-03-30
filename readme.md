@@ -65,6 +65,28 @@ Fun quotes from this test:
 
 (Said about prompts to complete profile.)
 
+##Poll
+Phrased questions to TIY cohort:  
+1. Have you used your [linkedin] account in the past 6 months?
+2. What do you use LinkedIn for? (or Why do you have the account?)
+
+**Answers**
+- (1) Yes (2) When Account Managing - to lookup other professionals and get any intel on them before jumping on calls with them (sometimes to add them as well to further "solidify" relationships). Basically, FB'in for the professional world. - Brent M.
+- (1) Yes (2) I used it a lot at my previous job with networking. Facebook was the connection of choice, but many asked to add me on LinkedIn as well. After that, I pretty much second what Brent said about looking people up and all that. I try to use Facebook as a more friendship oriented network and keep LinkedIn to professional connections. - Jared P.
+- (1) Yes (2) For professional connections/doing research on professional backgrounds (I looked at all of your linkedins before we interviewed you.. :simple_smile: ) - Karly B.
+- (1) Yes (2) I use it to ignore recruiters mostly. - Justin H.
+- (1) Yes (2) professional connections, social media marketing - Dan B.
+- (1) Yes (2) i rarely use it now. It’s dry and boring. I get on when I feel the need to reach out prof and then hide while I’m not looking. I hate its look. I really get annoyed by that endorsement feature (he endorsed me, now I have to endorse him). It’s a necessary evil. - Katy C.
+- (1) Yes (2) Professional connections. - Nagmeh S.
+- (1) Yes (2) To appear professional - Vivek P.
+- (1) Yes (2) Networking - Ryan Y.
+- (1) No (2) used it to apply for a job very long time ago.
+
+**Summary**
+It seems that most of the people polled used LinkedIn at some point for networking, even if the use of it in networking was merely to appear professional. The value to recruiters is obvious, but a nebulous "networking" isn't necessarily getting users anywhere (like most things that have that label). Saying that you use it for networking is much different than describing how you use it for networking. The most solid answer for use other than puffing up image seems to be for frontloading on meetings that you already have scheduled that you didn't use LinkedIn to create.
+
+The idea I get is more that LinkedIn is useful as a database of work history for people who want to know each other's professional backgrounds than a site that actually connects any of them. This is actually a complaint voiced in the Baffler article referenced in my notes.
+
 ##Notes
 LinkedIn News on Google is a mixture of "How to use" and "How LinkedIn is failing"
 

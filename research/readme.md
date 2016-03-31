@@ -53,7 +53,7 @@ I hypothesize users will have a difficult time editing what is publicly visible 
 - User discovered "edit profile picture and visibility"
 - User saw page that appeared to be where she started
 - Made loop again
-- User this time that in the sidebar there was a checklist for visibility options and changed/saved that
+- User this time found that in the sidebar there was a checklist for visibility options and changed/saved that
 
 The process to change public visibility on a LinkedIn profile took my user 7 minutes.
 
@@ -87,6 +87,16 @@ Phrased questions to TIY cohort:
 It seems that most of the people polled used LinkedIn at some point for networking, even if the use of it in networking was merely to appear professional. The value to recruiters is obvious, but a nebulous "networking" isn't necessarily getting users anywhere (like most things that have that label). Saying that you use it for networking is much different than describing how you use it for networking. The most solid answer for use other than puffing up image seems to be for frontloading on meetings that you already have scheduled that you didn't use LinkedIn to create.
 
 The idea I get is more that LinkedIn is useful as a database of work history for people who want to know each other's professional backgrounds than a site that actually connects any of them. This is actually a complaint voiced in the Baffler article referenced in my notes.
+
+##Clearhead
+- Users easily separable
+    + most people
+    + sales people
+    + recruiters
+- Different for everyone.
+- Treat like tool
+    + Create tabs like "new connections"
+    + "Follow up"
 
 ##Notes
 LinkedIn News on Google is a mixture of "How to use" and "How LinkedIn is failing"
@@ -137,4 +147,3 @@ Barclays' Vogel seems to think it's a little of both. At one point Vogel compare
 **Solutions**
 - Open API and monetize
 - Become a social network that helps recruiters find people in high-demand talent pools
-- 

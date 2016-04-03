@@ -11,6 +11,7 @@ VARIABLES
 
 $color-accent: #FF4081;
 $color-bg: #fafafa;
+$color-bg-2: #f5f5f5;
 $color-primary: #3F51B5;
 $color-primary-dark: #303F9F;
 $color-divider: #B6B6B6;
@@ -29,7 +30,7 @@ GRID
 
 $tot-width: 100%;
 $num-col: 12;
-$gut-width: 1%;
+$gut-width: 2%;
 
 $ind-col-width: (($tot-width) - ($gut-width) * ($num-col - 1)) / $num-col;
 
@@ -178,32 +179,117 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.wrapper {
+	background-color: $color-bg-2;
+}
 .sitemain {
 	margin: 0 auto;
 	overflow: hidden;
 	width: 90%;
 }
 
-section {
-	border: 1px solid black;
-	margin: 1rem 0;
-	padding: 1rem;
-}
-
 .button {
 	color: $color-primary;
-	font-size: 1rem;
+	font-size: 14px;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
+/*
+==================
+HEADER
+==================
+*/
+
+.site-header {
+	background: $color-primary-dark;
+	color: $color-bg;
+	overflow: hidden;
+	padding: 1rem 1rem 0.3rem 1rem;;
+
+	.logo {
+		font-size: 2rem;
+		font-weight: medium;
+	}
+
+	ul,
+	span {
+		display: none;
+	}
+	
+	.search-input {
+		font-size: 14px;
+		margin-right: -3px;
+		padding: 9px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	.search-submit {
+		background: $color-accent;
+		border: none;
+		color: $color-bg;
+		font-size: 14px;
+		padding: 11px 16px;
+		text-transform: uppercase;
+	}
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		border-radius: 50%;
+		height: 40px;
+		padding: 0;
+		width: 40px;
+	}
+
+}
+
+/*
+==================
+CARDS
+==================
+*/
+
+.card {
+	background: $color-bg;
+	box-shadow: 2px 1px 1px grey;
+	margin: 1rem auto;
+	overflow: hidden;
+	padding: 1rem;
+}
+
+/*
+==================
+CARDS
+==================
+*/
+
+.meetings {
+
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		height: 40px;
+		width: 40px;
+	}
+}
 
 
+/*
+==================
+FOOTER
+==================
+*/
 
+.site-footer {
+	background: $color-primary-dark;
+	color: $color-bg;
+	padding: 1rem;
 
-
+}
 
 
 

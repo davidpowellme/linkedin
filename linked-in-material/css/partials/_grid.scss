@@ -1,26 +1,3 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
-/*
-==================
-VARIABLES
-==================
-*/
-
-
-$color-accent: #FF4081;
-$color-bg: #fafafa;
-$color-primary: #3F51B5;
-$color-primary-dark: #303F9F;
-$color-divider: #B6B6B6;
-$color-text: #727272;
-$color-text-light: #727272;
-$font-regular: 'Roboto', sans-serif;
-
-
-
-
 /*
 ==================
 GRID
@@ -29,7 +6,7 @@ GRID
 
 $tot-width: 100%;
 $num-col: 12;
-$gut-width: 1%;
+$gut-width: 2%;
 
 $ind-col-width: (($tot-width) - ($gut-width) * ($num-col - 1)) / $num-col;
 
@@ -163,61 +140,6 @@ $ind-col-width: (($tot-width) - ($gut-width) * ($num-col - 1)) / $num-col;
     @include grid(12);
   }
 }
-
-/*
-==================
-GLOBAL
-==================
-*/
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
-.sitemain {
-	margin: 0 auto;
-	overflow: hidden;
-	width: 90%;
-}
-
-section {
-	border: 1px solid black;
-	margin: 1rem 0;
-	padding: 1rem;
-}
-
-.button {
-	color: $color-primary;
-	font-size: 1rem;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -208,7 +208,14 @@ p {
 }
 
 .sidebar {
+	background: $color-bg;
 	display: none;
+	float: right;
+	height: 100%;
+
+	.card {
+		margin: 0;
+	}
 }
 
 @media (min-width: 900px) {
@@ -221,6 +228,11 @@ p {
 			display: block;
 		}
 	}
+}
+.wrapper {
+	background: $color-bg-2;
+	overflow: hidden;
+
 }
 .my-wrapper {
 	background-color: $color-bg-2;

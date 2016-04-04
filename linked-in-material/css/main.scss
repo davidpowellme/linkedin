@@ -177,7 +177,7 @@ GLOBAL
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-size: 0.9rem;
 }
 
 .wrapper {
@@ -191,11 +191,17 @@ body {
 
 .button {
 	color: $color-primary;
+	display: inline-block;
 	font-size: 14px;
-	padding: 1rem;
+	padding: 11px 16px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.rbutton {
+	box-shadow: 1px 1px 2px black;
+
 }
 
 /*
@@ -261,6 +267,49 @@ CARDS
 	overflow: hidden;
 	padding: 1rem;
 }
+/*
+==================
+PROFILE ACTIVITY
+==================
+*/
+
+.graph {
+		background: url(/images/graph.png) 0 0 no-repeat;
+		background-size:cover;
+		height: 100px;
+	}
+
+.notifications {
+	margin: 1.5rem 0;
+
+	.wrapper {
+		margin: 0 auto;
+		
+		.button {
+			margin: 0.5rem;
+		}
+	}
+}
+
+.profile {
+	
+	.pie-chart {
+		background: $color-accent;
+		border-radius: 50%;
+		color: $color-bg;
+		float: right;
+		height: 60px;
+		padding: 1.4rem 1.2rem;
+		text-align: center;
+		width: 60px;
+	}
+
+	.button {
+		padding-left: 0;
+	}
+	
+}
+
 
 /*
 ==================

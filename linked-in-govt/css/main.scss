@@ -212,6 +212,7 @@ p {
 	display: none;
 	float: right;
 	height: 100%;
+	margin: 0;
 
 	.card {
 		margin: 0;
@@ -291,15 +292,25 @@ HEADER
 		font-weight: medium;
 	}
 
-	ul,
+	.menu-content-lg {
+		display: none;
+	}
+
+	.menu-content {
+		display: none;
+		list-style: none;
+		width: 30%;
+	}
+
 	span {
 		display: none;
 	}
-	
 	.search-input {
-		font-size: 14px;
+		font-size: 1.7rem;
+		float: left;
 		margin-right: -3px;
-		padding: 9px;
+		padding: 0.8rem 0.7rem;
+		width: 75%;
 
 		&:focus {
 			outline: none;
@@ -310,8 +321,17 @@ HEADER
 		border: none;
 		color: $color-bg;
 		font-size: 14px;
-		padding: 11px 16px;
-		text-transform: uppercase;
+		padding: 1rem 2rem;
+	}
+
+	.search-submit-2 {
+		background: $color-accent;
+		border: none;
+		color: $color-bg;
+		display: none;
+		float: left;
+		font-size: 1.7rem;
+		padding: 1rem 2rem;
 	}
 	.prof-pic {
 		background: url(/images/prof-1.jpg) 0 0 no-repeat;
@@ -329,7 +349,7 @@ HEADER
 
 	.site-header {
 
-		ul {
+		.menu-content-lg {
 			display: block;
 			float: right;
 			list-style: none;
@@ -339,6 +359,13 @@ HEADER
 				display: inline-block;
 				margin: 0 1rem;
 			}
+		}
+
+		.search-submit {
+			display: none;
+		}
+		.search-submit-2 {
+			display: block;
 		}
 	}
 }
@@ -382,10 +409,12 @@ PROFILE ACTIVITY
 		background: url(/images/graph.png) 0 0 no-repeat;
 		background-size:cover;
 		height: 100px;
-	}
+}
 
 .notifications {
+	animation: slideIN 2s linear forwards;
 	margin: 1.5rem 0;
+	transform: translate(-750px, 0);
 
 	.wrapper {
 		margin: 0 auto;
@@ -427,6 +456,15 @@ PROFILE ACTIVITY
 
 	.text {
 		padding-left: 1rem;
+	}
+}
+
+@keyframes slideIN {
+	from {
+		transform: translate(-750px, 0);
+	}
+	to {
+		transform: translate(0, 0);
 	}
 }
 

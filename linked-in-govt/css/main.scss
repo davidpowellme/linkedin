@@ -1,0 +1,606 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/*
+==================
+VARIABLES
+==================
+*/
+
+
+$color-accent: #02bfe7;
+$color-bg: #fafafa;
+$color-bg-2: #dce4ef;
+$color-primary: #0071bc;
+$color-primary-dark: #112e51;
+$color-divider: #aeb0b5;
+$color-text: #000000;
+$color-text-light: #323a45;
+$font-regular: 'Source Sans Pro', sans-serif;
+$font-headings: 'Merriweather', serif;
+
+
+
+
+/*
+==================
+GRID
+==================
+*/
+
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 2%;
+
+$ind-col-width: (($tot-width) - ($gut-width) * ($num-col - 1)) / $num-col;
+
+@mixin grid($geezy) {
+  width: $geezy * $ind-col-width + $gut-width * ($geezy - 1);
+  float: left;
+  margin-right: $gut-width;
+
+  &:last-child {
+    margin-right: 0;
+}
+}
+
+//mobile styles
+
+.col-sm-1 {
+  @include grid(1);
+}
+.col-sm-2 {
+  @include grid(2);
+}
+.col-sm-3 {
+  @include grid(3);
+}
+.col-sm-4 {
+  @include grid(4);
+}
+.col-sm-5 {
+  @include grid(5);
+}
+.col-sm-6 {
+  @include grid(6);
+}
+.col-sm-7 {
+  @include grid(7);
+}
+.col-sm-8 {
+  @include grid(8);
+}
+.col-sm-9 {
+  @include grid(9);
+}
+.col-sm-10 {
+  @include grid(10);
+}
+.col-sm-11 {
+  @include grid(11);
+}
+.col-sm-12 {
+  @include grid(12);
+}
+
+//MEDIUM SCREEN STYLES
+
+@media (min-width: 650px) {
+  .col-md-1 {
+    @include grid(1);
+  }
+  .col-md-2 {
+    @include grid(2);
+  }
+  .col-md-3 {
+    @include grid(3);
+  }
+  .col-md-4 {
+    @include grid(4);
+  }
+  .col-md-5 {
+    @include grid(5);
+  }
+  .col-md-6 {
+    @include grid(6);
+  }
+  .col-md-7 {
+    @include grid(7);
+  }
+  .col-md-8 {
+    @include grid(8);
+  }
+  .col-md-9 {
+    @include grid(9);
+  }
+  .col-md-10 {
+    @include grid(10);
+  }
+  .col-md-11 {
+    @include grid(11);
+  }
+  .col-md-12 {
+    @include grid(12);
+  }
+}
+
+//LARGE SCREEN STYLES
+
+@media (min-width: 900px) {
+  .col-lg-1 {
+    @include grid(1);
+  }
+  .col-lg-2 {
+    @include grid(2);
+  }
+  .col-lg-3 {
+    @include grid(3);
+  }
+  .col-lg-4 {
+    @include grid(4);
+  }
+  .col-lg-5 {
+    @include grid(5);
+  }
+  .col-lg-6 {
+    @include grid(6);
+  }
+  .col-lg-7 {
+    @include grid(7);
+  }
+  .col-lg-8 {
+    @include grid(8);
+  }
+  .col-lg-9 {
+    @include grid(9);
+  }
+  .col-lg-10 {
+    @include grid(10);
+  }
+  .col-lg-11 {
+    @include grid(11);
+  }
+  .col-lg-12 {
+    @include grid(12);
+  }
+}
+
+/*
+==================
+GLOBAL
+==================
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: $font-regular;
+	font-size: 20px;
+	line-height: 1.7em;
+}
+
+h2 {
+	color: $color-text;
+	font-family: $font-headings;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.3em/39px;
+}
+
+.sidebar {
+	display: none;
+}
+
+@media (min-width: 900px) {
+	.sidebar {
+		display: block;
+
+		.follow,
+		.people,
+		.meetings {
+			display: block;
+		}
+	}
+}
+.my-wrapper {
+	background-color: $color-bg-2;
+	overflow: hidden;
+	padding: 1rem 5% 1rem 5%;
+}
+.sitemain {
+	margin: 0;
+}
+@media (max-width: 899px) {
+	.sitemain {
+		margin: 0 auto;
+		width: 95%;
+	}
+}
+
+.button {
+	background: $color-accent;
+	border-radius: 3px;
+	color: $color-bg;
+	display: inline-block;
+	font-size: 1.7rem;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+	padding: 1rem 2rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.rbutton {
+	background: $color-bg;
+	box-shadow: 1px 1px 1px black;
+
+}
+
+.card-title {
+	background: $color-primary-dark;
+	color: $color-bg;
+	margin: -1rem -1rem 6px -1rem;
+	padding: 10px 16px;
+}
+
+/*
+==================
+HEADER
+==================
+*/
+
+.site-header {
+	background: $color-primary-dark;
+	color: $color-bg;
+	overflow: hidden;
+	padding: 1rem 1rem 1rem 1rem;;
+
+	.logo {
+		font-size: 2rem;
+		font-weight: medium;
+	}
+
+	ul,
+	span {
+		display: none;
+	}
+	
+	.search-input {
+		font-size: 14px;
+		margin-right: -3px;
+		padding: 9px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	.search-submit {
+		background: $color-accent;
+		border: none;
+		color: $color-bg;
+		font-size: 14px;
+		padding: 11px 16px;
+		text-transform: uppercase;
+	}
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		border-radius: 50%;
+		float: right;
+		height: 40px;
+		padding: 0;
+		width: 40px;
+	}
+
+}
+
+@media (min-width: 900px) {
+
+	.site-header {
+
+		ul {
+			display: block;
+			float: right;
+			list-style: none;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 1rem;
+			}
+		}
+	}
+}
+
+/*
+==================
+CARDS
+==================
+*/
+
+.card {
+	background: $color-bg;
+	box-shadow: 2px 1px 1px grey;
+	margin: 1rem;
+	overflow: hidden;
+	padding: 1rem;
+}
+
+.g-card {
+	background: $color-bg;
+	border: 3px solid $color-divider;
+	box-shadow: 2px 1px 1px grey;
+	margin: 1rem;
+	overflow: hidden;
+}
+
+@media (min-width: 900px) {
+	
+
+	.follow,
+	.people,
+	.meetings {
+		display: none;
+	}
+}
+/*
+==================
+PROFILE ACTIVITY
+==================
+*/
+
+.graph {
+		background: url(/images/graph.png) 0 0 no-repeat;
+		background-size:cover;
+		height: 100px;
+	}
+
+.notifications {
+	margin: 1.5rem 0;
+
+	.wrapper {
+		margin: 0 auto;
+		padding-left: 10px;
+	}
+}
+
+.profile {
+	
+	.pie-chart {
+		background: $color-accent;
+		border-radius: 50%;
+		color: $color-bg;
+		float: right;
+		height: 60px;
+		padding: 1.4rem 1.2rem;
+		text-align: center;
+		width: 60px;
+	}
+
+	.button {
+		float: left;
+	}
+	
+}
+
+
+/*
+==================
+MEETINGS
+==================
+*/
+
+.meetings {
+	color: $color-text;
+
+	.prof-wrapper {
+		overflow: hidden;
+	}
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		float: right;
+		height: 60px;
+		width: 60px;
+	}
+
+	.title {
+		margin: 0;
+	}
+	.cat {
+		color: $color-text-light;
+		font-size: 14px;
+	}
+
+	.button {
+		display: block;
+		float: left;
+		margin-top: 2rem;
+	}
+	
+}
+
+/*
+==================
+FOLLOW-UP
+==================
+*/
+
+.follow {
+
+	article {
+		border-bottom: 2px solid $color-divider;
+		overflow: hidden;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	span {
+		color: $color-text-light;
+	}
+
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		float: right;
+		height: 50px;
+		margin-top: 10px;
+		width: 50px;
+	}
+
+	.button {
+		float: left;
+	}
+}
+
+/*
+==================
+FEED
+==================
+*/
+
+.feed {
+	overflow: hidden;
+
+	header {
+		border-bottom: 2px solid $color-divider;
+		margin: 0 -1rem;
+
+		ul {
+			list-style: none;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 0;
+			width: 100%;
+
+			.button {
+				float: left;
+				padding-top: 0;
+			}
+			.fa {
+				color: $color-primary;
+				float: right;
+				margin-right: 1rem;
+				text-align: center;
+			}
+		}
+	}
+	article {
+		margin-top: 10px;
+	}
+
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		height: 60px;
+		margin-top: 12px;
+		width: 60px;
+	}
+
+	.post {
+		padding: 0 1rem;
+	}
+	.interact {
+		list-style: none;
+		padding: 0;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	.more {
+		
+		.button {
+			float: right;
+		}
+	}
+}
+
+
+/*
+==================
+PEOPLE
+==================
+*/
+
+.people {
+
+	article {
+		// margin: 1rem 0;
+		overflow: hidden;
+	}
+
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		border-radius: 50%;
+		height: 40px;
+		margin-right: 16px;
+		width: 40px;
+	}
+
+	.info {
+		border-bottom: 2px solid $color-divider;
+		overflow: hidden;
+		padding: 10px;
+
+		.options {
+			text-align: right;
+		}
+	}
+
+	.fa {
+		font-size: 16px;
+	}
+
+	.fa-check {
+		color: $color-primary;
+	}
+
+	.fa-ban {
+		color: $color-accent;
+	}
+}
+
+/*
+==================
+FOOTER
+==================
+*/
+
+.site-footer {
+	background: $color-primary-dark;
+	color: $color-bg;
+	padding: 1rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

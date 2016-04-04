@@ -251,7 +251,7 @@ HEADER
 	background: $color-primary-dark;
 	color: $color-bg;
 	overflow: hidden;
-	padding: 1rem 1rem 0.3rem 1rem;;
+	padding: 1rem 1rem 1rem 1rem;;
 
 	.logo {
 		font-size: 2rem;
@@ -284,11 +284,30 @@ HEADER
 		background: url(/images/prof-1.jpg) 0 0 no-repeat;
 		background-size: cover;
 		border-radius: 50%;
+		float: right;
 		height: 40px;
 		padding: 0;
 		width: 40px;
 	}
 
+}
+
+@media (min-width: 900px) {
+
+	.site-header {
+
+		ul {
+			display: block;
+			float: right;
+			list-style: none;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 1rem;
+			}
+		}
+	}
 }
 
 /*

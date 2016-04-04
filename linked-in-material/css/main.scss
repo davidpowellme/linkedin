@@ -15,7 +15,7 @@ $color-bg-2: #f5f5f5;
 $color-primary: #3F51B5;
 $color-primary-dark: #303F9F;
 $color-divider: #B6B6B6;
-$color-text: #727272;
+$color-text: #000000;
 $color-text-light: #727272;
 $font-regular: 'Roboto', sans-serif;
 
@@ -177,6 +177,7 @@ GLOBAL
 
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 }
 
 .wrapper {
@@ -263,18 +264,45 @@ CARDS
 
 /*
 ==================
-CARDS
+MEETINGS
 ==================
 */
 
 .meetings {
+	color: $color-text;
 
+	.prof-wrapper {
+		overflow: hidden;
+	}
 	.prof-pic {
 		background: url(/images/prof-1.jpg) 0 0 no-repeat;
 		background-size: cover;
-		height: 40px;
-		width: 40px;
+		float: right;
+		height: 60px;
+		width: 60px;
 	}
+
+	.title {
+		margin: 0;
+	}
+	.cat {
+		color: $color-text-light;
+		font-size: 14px;
+	}
+
+	h2 {
+		color: $color-text;
+		font-weight: 400;
+		margin: 10px 0;
+	}
+
+	.button {
+		display: block;
+		float: left;
+		margin-top: 2rem;
+		padding-left: 0;
+	}
+	
 }
 
 

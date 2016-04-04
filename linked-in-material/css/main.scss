@@ -372,7 +372,6 @@ FOLLOW-UP
 
 	article {
 		border-bottom: 2px solid $color-divider;
-		margin-top: 10px;
 		overflow: hidden;
 
 		&:last-child {
@@ -401,17 +400,119 @@ FOLLOW-UP
 
 /*
 ==================
+FEED
+==================
+*/
+
+.feed {
+	overflow: hidden;
+
+	header {
+		border-bottom: 2px solid $color-divider;
+		margin: 0 -1rem;
+
+		ul {
+			list-style: none;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 0;
+			width: 100%;
+
+			.button {
+				float: left;
+				padding-top: 0;
+			}
+			.fa {
+				color: $color-primary;
+				float: right;
+				margin-right: 1rem;
+				text-align: center;
+			}
+		}
+	}
+	article {
+		margin-top: 10px;
+	}
+
+	.prof-pic {
+		background: url(/images/prof-1.jpg) 0 0 no-repeat;
+		background-size: cover;
+		height: 60px;
+		margin-top: 12px;
+		width: 60px;
+	}
+
+	.post {
+		padding: 0 1rem;
+	}
+	.interact {
+		list-style: none;
+		padding: 0;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	.more {
+		float: right;
+	}
+}
+
+
+/*
+==================
 PEOPLE
 ==================
 */
 
 .people {
 
+	article {
+		margin: 1rem 0;
+		overflow: hidden;
+	}
+
 	.prof-pic {
 		background: url(/images/prof-1.jpg) 0 0 no-repeat;
 		background-size: cover;
+		border-radius: 50%;
 		height: 40px;
+		margin-right: 16px;
 		width: 40px;
+	}
+
+	.info {
+		border-bottom: 2px solid $color-divider;
+		overflow: hidden;
+		padding: 10px;
+
+		.options {
+			text-align: right;
+		}
+	}
+
+	.fa {
+		font-size: 16px;
+	}
+
+	.fa-check {
+		color: $color-primary;
+	}
+
+	.fa-ban {
+		color: $color-accent;
+	}
+
+	.name {
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	.job {
+		color: $color-text-light;
+		font-size: 14px;
+		font-weight: 400;
 	}
 }
 

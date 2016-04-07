@@ -9,8 +9,8 @@ VARIABLES
 */
 
 
-$color-accent: #FF4081;
-$color-bg: #fafafa;
+$color-accent: #4CAF50;
+$color-bg: #fff;
 $color-bg-2: #f5f5f5;
 $color-primary: #3F51B5;
 $color-primary-dark: #303F9F;
@@ -190,6 +190,10 @@ h2 {
 	margin: 10px 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 .sidebar {
 	display: none;
 }
@@ -237,12 +241,30 @@ h2 {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+
+	&:hover {
+		color: lighten($color-primary, 10%);
+	}
+
+	&:active {
+		color: darken($color-primary, 5%);
+	}
 }
 
 .rbutton {
 	background: $color-primary;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	color: $color-bg;
+	transition: box-shadow 500ms;
+
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		color: $color-bg;
+	}
+
+	&:active {
+		color: $color-bg;
+	}
 }
 
 .card-title {
@@ -377,13 +399,6 @@ PROFILE ACTIVITY
 ==================
 */
 
-.graph {
-		background: url(/images/graph.png) 0 0 no-repeat;
-		background-size:cover;
-		border: 1px solid $color-divider;
-		height: 100px;
-}
-
 .alerts {
 
 	.rbutton {
@@ -392,6 +407,16 @@ PROFILE ACTIVITY
 
 		&:last-child {
 			margin-right: 0;
+		}
+
+		span {
+			background: $color-accent;
+			border-radius: 50%;
+			display: inline-block;
+			height: 1.5rem;
+			margin-left: 0.5rem;
+			padding: 0.25rem;
+			width: 1.5rem;	
 		}
 	}
 }
@@ -574,6 +599,7 @@ PEOPLE
 		border-radius: 50%;
 		height: 40px;
 		margin-right: 16px;
+		margin-top: 0.5rem;
 		width: 40px;
 	}
 
@@ -593,10 +619,20 @@ PEOPLE
 
 	.fa-check {
 		color: $color-primary;
+
+		&:hover {
+			color: lighten($color-primary, 10%);
+		}
+
 	}
 
 	.fa-ban {
 		color: $color-accent;
+
+		&:hover {
+			color: lighten($color-accent, 10%);
+		}
+
 	}
 
 	.name {
@@ -621,6 +657,7 @@ FOOTER
 	background: $color-primary-dark;
 	color: $color-bg;
 	padding: 1rem;
+	text-align: center;
 
 }
 

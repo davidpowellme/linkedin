@@ -304,6 +304,10 @@ HEADER
 		font-size: 2rem;
 		margin-right: 0.5rem;
 		padding: 0.2rem;
+
+		&:hover {
+			color: $color-accent;
+		}
 	}
 	
 	.search-input {
@@ -512,6 +516,11 @@ FOLLOW-UP
 	.button {
 		float: left;
 		padding-left: 0;
+	}
+
+	span {
+		margin-top: -1rem;
+		margin-bottom: 0.75rem;
 	}
 }
 
